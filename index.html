@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="title">Tec Giant Survey Form</h1>
+    <p id="description">Lorem, ipsum dolor tempora eligendi pariatur beatae?</p>
+    <form id="survey-form" action="#">
+
+        <label for="name" id="name-label"> Name:
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label for="email" id="email-label"> Email:
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label for="number" id="number-label"> Number:
+            <input type="number" id="number" placeholder="Enter your age" min="13" max="18" required>
+        </label>
+
+        <label for="dropdown"> Which option best describes your current role?
+            <select id="dropdown">
+                <option value="Junior developer">Junior Developer</option>
+                <option value="Senior developer">Senior Developer</option>
+                <option value="Student">Learning Yet</option>
+            </select>
+        </label>
+
+        <label for="referrer">
+            Would you recommend freeCodeCamp to a friend?
+            <input type="radio" value="definitely" name="referrer" class="inline"> Definitely
+        </label>
+        <label for="referrer">
+            <input type="radio" value="maybe" name="referrer" class="inline"> Maybe
+        </label>
+        <label for="referrer">
+            <input type="radio" value="not  sure" name="referrer" class="inline"> Not sure
+        </label>
+
+        <label for="">What would you like to see improved?<br>
+            <input type="checkbox" value="Front-end" class="inline"> Front-end
+        </label>
+        <label for="">
+            <input type="checkbox" value="Back-end" class="inline"> Back-end
+        </label>
+        <label for="">
+            <input type="checkbox" value="Full stack" class="inline"> Full stack
+        </label>
+
+        <label for="comment"> Any Comments or Suggestions?
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </label>
+
+        <button type="submit" id="submit">submit</button>
+
+
+    </form>
+</body>
+</html>
